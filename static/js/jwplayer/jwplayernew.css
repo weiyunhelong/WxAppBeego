@@ -1,0 +1,232 @@
+div.pagewrap{width:960px}p
+img{float:none}div.JWContainer{overflow:visible}div.JWContainer
+h1{font-weight:normal;font-size:26px;color:#369;margin:0
+0 .5em 0;*margin:30px
+0 .5em 0;*padding:30px
+0 0 0}div.JWContainer
+h2{font-weight:normal;font-size:20px;color:#369;margin:0
+0 1em}div.JWContainer
+h2.WithSubtitle{margin:0
+0 .5em !important}div.JWContainer
+h3{font-size:16px;color:#000;margin:0
+0 1em 0}div.JWContainer
+h3.Subtitle{color:#777;margin:0
+0 1em;font-size:16px}div.JWContainer
+h4{font-weight:normal;font-size:16px;color:#369;margin:1em
+0}div.JWContainer
+h5{font-style:italic;font-weight:normal;font-size:14px;color:#666}#text p,
+div.JWContainer
+p{font-size:14px;line-height:1.5em;margin:0
+0 1.5em 0 !important;padding:0
+!important;padding-top:0 !important;padding-bottom:0 !important}div.JWContainer
+em{color:inherit !important;display:inline}div.JWContainer
+hr{border:none;border-top:1px solid #369;height:1px;width:100%;display:block;margin:10px
+0 30px;clear:both}div.JWContainer
+hr.topHeader{border-top:1px solid #ececec;margin: -16px 0 40px 0;*position:relative;*top: -16px}div.JWContainer
+hr.topHeaderFeatures{border-top:1px solid #ececec;margin: -16px 0 20px 0;*position:relative;*top: -16px}div.JWContainer ul,
+div.JWContainer
+ol{margin:1em
+0 1em 20px;font-size:14px}div.JWContainer ul li,
+div.JWContainer ol
+li{margin-bottom: .5em;line-height:1.5em}div.JWContainer pre,
+div.JWContainer
+code{display:block;background:#e5f3c8;border:1px
+solid #d3eaa4;font-family:"Lucida Console",Courier;padding:1em;font-size:11px;line-height:1.25em;margin:1em
+2em 2em 2em;white-space:pre-wrap;white-space: -moz-pre-wrap;white-space: -pre-wrap;white-space: -o-pre-wrap;word-wrap:break-word;width:80%}#text p.JWLogo,
+div.JWContainer
+p.JWLogo{margin:0
+!important;padding:0
+!important;padding-top:0 !important;padding-bottom:0 !important;text-indent: -9999px;height:38px;background-image:url('http://s1-www.ltvimg.com/v3_5_5/images/jw-player/jwplayer_sprites.png')}div.JWContainer
+#JWPlayerLogo{width:355px;background-position:0 0}div.JWContainer #JWPlayerLogo:hover,
+div.JWContainer ul#JWSection.hovered li
+#JWPlayerLogo{background-position: -360px 0}div.JWContainer
+#JWSilverlightLogo{width:355px;background-position:0 -38px}div.JWContainer #JWSilverlightLogo:hover,
+div.JWContainer ul#JWSection.hovered li
+#JWSilverlightLogo{background-position: -360px -38px}div.JWContainer
+#JWImgRotatorLogo{width:355px;background-position:0 -76px}div.JWContainer #JWImgRotatorLogo:hover,
+div.JWContainer ul#JWSection.hovered li
+#JWImgRotatorLogo{background-position: -360px -76px}div.JWContainer
+#JWDesktopLogo{width:355px;background-position:0 -114px}div.JWContainer #JWDesktopLogo:hover,
+div.JWContainer ul#JWSection.hovered li
+#JWDesktopLogo{background-position: -360px -114px}div.JWContainer
+#JWSection{font-size:11px;color:#666;list-style:none;margin:0
+!important;padding:18px
+0 4px 0 !important;z-index:100;width:250px;height:38px}div.JWContainer #JWSection
+li{}div.JWContainer #JWSection li
+span.SectionText{display:block;width:170px;padding:2px
+24px 2px 5px;background:url('http://s1-www.ltvimg.com/v3_5_5/images/jw-player/jwplayer_sprites.png') right -1px;border:1px
+solid #dfdfdf;border-top-left-radius:4px;border-top-right-radius:4px;border-bottom-left-radius:4px;border-bottom-right-radius:4px;-webkit-border-top-left-radius:4px;-webkit-border-top-right-radius:4px;-webkit-border-bottom-left-radius:4px;-webkit-border-bottom-right-radius:4px;-moz-border-radius-topleft:4px;-moz-border-radius-topright:4px;-moz-border-radius-bottomleft:4px;-moz-border-radius-bottomright:4px;cursor:pointer}div.JWContainer #JWSection.hovered li
+span.SectionText{-moz-border-radius-bottomright:0;-moz-border-radius-bottomleft:0;-webkit-border-bottom-left-radius:0;-webkit-border-bottom-right-radius:0;border-bottom-left-radius:0;border-bottom-right-radius:0;\
+color: #000 !important;background:url('http://s1-www.ltvimg.com/v3_5_5/images/jw-player/jwplayer_sprites.png') right -24px;border:1px
+solid #ccc}div.JWContainer #JWSection
+#JWChoices{margin:0
+!important;padding:0;list-style:none;position:absolute;top:46px;background:#fff;background:rgba(245,245,245,.90);width:240px;border:1px
+solid #369;box-shadow:0 2px 0 rgba(0,0,0,.4);-moz-box-shadow:0 2px 0 rgba(0,0,0,.4);-webkit-box-shadow:0 2px 0 rgba(0,0,0,.4);border-bottom-right-radius:5px;border-bottom-left-radius:5px;-moz-border-radius-bottomright:5px;-moz-border-radius-bottomleft:5px;-webkit-border-bottom-right-radius:5px;-webkit-border-bottom-left-radius:5px;display:none;z-index:101}#JWChoices.jwplayer{left:115px}#JWChoices.jwsilverlight{left:65px}#JWChoices.jwimgrotator{left:50px}#JWChoices.jwdesktop{left:60px}div.JWContainer #JWSection #JWChoices
+li{margin:2px
+3px;padding:2px
+0 px;border-bottom:1px dotted #ccc;display:block}div.JWContainer #JWSection #JWChoices
+li.last{border:none}div.JWContainer #JWSection #JWChoices li
+a{display:block;padding:4px;color:#333;text-decoration:none;height:16px;line-height:20px;font-size:11px;border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;margin:0
+0 2px 0}div.JWContainer #JWSection #JWChoices li a:hover{background:#369;background:rgba(51,102,153, .8);color:#fff}div.JWContainer
+fieldset{margin:0;padding:0;border:none}div.JWContainer
+label{float:none;display:inline}div.JWContainer
+input.checkbox{margin:0
+4px 0 0;width:auto !important;border:none}ul.JWNav{list-style:none;position:absolute;top:26px;right:0px;margin:0
+!important;height:auto}ul.JWNav
+li{font-size:13px;color:#666;display:block;*display:inline-block;float:left;margin:0
+0 0 7px}ul.JWNav li
+a{color:#aaa;text-decoration:none;display:block;padding:3px
+6px}ul.JWNav li.Active
+a{color:#000;text-decoration:underline}ul.JWNav li.JWOrder
+a{display:inline-block;background:#369;background: -webkit-gradient(linear, left top, left bottom, from(#3d94ea), to(#336699));background: -moz-linear-gradient(top,  #3d94ea,  #336699);color:#fff;border-radius:4px;padding:1px
+8px;-webkit-border-radius:4px;-moz-border-radius:4px;border:1px
+solid #053769;position:relative;box-shadow:inset 0 1px 0 rgba(255,255,255,.5);-moz-box-shadow:inset 0 1px 0 rgba(255,255,255,.5);-webkit-box-shadow:inset 0 1px 0 rgba(255,255,255,.5);text-shadow:0 1px 0 rgba(0,0,0,.25)}ul.JWNav li.JWOrder a:hover{background:#3980c7}ul.JWNav li.JWOrder a:active{background:#000;top:1px}.JWContainer .Grid1,
+.JWContainer .Grid2,
+.JWContainer .Grid3,
+.JWContainer .Grid4,
+.JWContainer .Grid5,
+.JWContainer .Grid6,
+.JWContainer .Grid7,
+.JWContainer .Grid8,
+.JWContainer .Grid9,
+.JWContainer .Grid10,
+.JWContainer
+.Grid11{margin:20px
+20px 20px 0 !important}.JWContainer
+.GridLast{margin:20px
+0 !important}div.JWDownload{padding:15px
+15px 5px 15px;width:300px;width:268px;height:211px;height:189px;background-image:url('http://s0-www.ltvimg.com/v3_5_5/images/jw-player/jwplayer_dl_sprites.png');background-repeat:no-repeat;color:#fff;border:1px
+solid #000;border-radius:8px;-webkit-border-radius:8px;-moz-border-radius:8px;text-shadow:0 1px 0 rgba(0,0,0,.5);-moz-box-shadow:0px 2px 5px #666;-webkit-box-shadow:0px 2px 5px #666;box-shadow:0px 2px 5px #666;-moz-box-shadow:inset 0 1px 0px #7c9dc0;-webkit-box-shadow:inset 0 1px 0px #7c9dc0;box-shadow:inset 0 1px 0px #7c9dc0}#text div.JWDownload p,
+div.JWDownload
+p{margin:0
+!important}div.JWDownload
+input.textinput{border:1px
+solid #000;font-size:12px;width:258px;padding:4px;-moz-box-shadow:0 1px 0px #2a6eb2;-webkit-box-shadow:0 1px 0px #2a6eb2;box-shadow:0 1px 0px #2a6eb2;background:#fff;background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#ffffff));background: -moz-linear-gradient(top,  #eeeeee,  #ffffff)}div.JWDownload
+a.JWDownloadButton{display:block;height:58px;width:268px;background-image:url('http://s0-www.ltvimg.com/v3_5_5/images/jw-player/jwplayer_dl_sprites.png');background-position:0 -400px;outline:none;text-indent: -9999px;margin:10px
+0 4px 0;position:relative;cursor:pointer}div.JWDownload a.JWDownloadButton:hover{background-position: -268px -400px;*background-position:0 -400px}div.JWDownload a.JWDownloadButton:active{top:1px;background-position:0 -400px}#text div.JWDownload p.JWAgree,
+div.JWDownload
+p.JWAgree{font-size:10px !important;text-align:center !important;font-style:italic !important;color:#a3d1ff !important}div.JWDownload p.JWAgree
+a{color:#a3d1ff}table.JWCompare{width:560px;border-collapse:collapse;float:right;margin:0
+10px;font-size:11px}table.JWCompare
+th{border-bottom:1px solid #99b0c6;line-height:22px;font-size:13px;font-weight:bold}table.JWCompare
+td{border-bottom:1px solid #e6e7e9;line-height:28px;text-align:center;width:140px;vertical-align:top}table.JWCompare tr.LastColumn
+td{border-bottom:none;line-height:18px}table.JWCompare
+th.Compare{color:#666;font-size:11px;text-align:left;text-transform:uppercase}table.JWCompare
+th.Now{color:#666}table.JWCompare
+th.Free{color:#690}table.JWCompare
+th.Pro{color:#369}table.JWCompare
+td.Compare{font-size:10px;color:#369;text-transform:uppercase;font-style:italic;font-weight:bold;text-align:left}table.JWCompare
+td.Now{font-style:italic;color:#666}table.JWCompare td.Pro
+a.OrderPro{display:block;margin:5px
+auto 2px;width:70px;background:#369;color:#fff;line-height:22px;text-decoration:none;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;position:relative}table.JWCompare td.Pro a.OrderPro:hover{background:#3980c7}table.JWCompare td.Pro a.OrderPro:active{background:#000;top:1px}table.JWCompare
+span.OrderPrice{line-height:1em}table.JWCompare
+td.Enterprise{text-align:left;font-size:11px;color:#666;font-style:italic;width:560px !important}div.JWSidebar
+h3{font-size:12px;font-weight:bold;margin:2em
+0 .25em}div.JWSidebar
+p{font-size:12px;line-height:1.5em}div.JWSidebar
+ul.JWRelated{list-style:none;margin:10px
+0 0 0;padding:0}div.JWSidebar ul.JWRelated
+li{position:relative;padding:0
+0 0 54px !important;color:#666;font-size:12px;line-height:16px !important;margin:0
+0 20px 0 !important}ul.JWRelated li
+strong{display:block;font-size:14px;*margin-top: -14px}ul.JWRelated li strong
+a{color:#000;text-decoration:none}ul.JWRelated li strong a:hover{color:#369;text-decoration:underline}ul.JWRelated li
+span{font-size:11px;color:#000;display:block}ul.JWRelated li
+a.Icon{display:block;height:39px;width:40px;position:absolute;top:0px;left:0px;*left:0px;_left: -54px;outline:none;text-indent: -9999px;background-image:url('http://s0-www.ltvimg.com/v3_5_5/images/jw-player/jwplayer_dl_sprites.png');background-repeat:no-repeat}ul.JWRelated li.Related_AdSolution
+a.Icon{background-position: -80px -460px}ul.JWRelated li.Related_BotR
+a.Icon{background-position: -120px -460px}ul.JWRelated li.Related_LTTV
+a.Icon{background-position: -160px -460px}div.JWContainer
+h1.Overview{font-size:30px}div.JWContainer
+h2.Overview{font-size:22px !important;color:#787878;line-height:1em;float:left;margin:15px
+0 0 0 !important}a.OverviewDownload{float:left;display:block;height:70px;width:230px;background-image:url('http://s0-www.ltvimg.com/v3_5_5/images/jw-player/jwplayer_overview_sprites.jpg');background-repeat:no-repeat;background-position: -600px -560px;outline:none;text-indent: -9999px;vertical-align:middle;margin:7px
+0 0 10px !important}a.OverviewDownload:hover{background-position: -600px -640px}div.OverviewVideoWrapper{height:auto;width:938px;margin:10px
+auto 30px;position:relative;background:url('http://s0-www.ltvimg.com/v3_5_5/images/jw-player/jwplayer_overview_sprites.jpg') no-repeat 0 0;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;border:1px
+solid #333;box-shadow:0 2px 10px #333, inset 0 1px 0 #707478;-moz-box-shadow:0 2px 10px #333, inset 0 1px 0 #707478;-webkit-box-shadow:0 2px 10px #333, inset 0 1px 0 #707478}div.OverviewVideoWrapper
+div.VideoPlayer{width:720px;border-bottom:1px solid #000;background:#111;margin:20px
+auto 30px;box-shadow:0 0 15px #000;-moz-box-shadow:0 0 15px #000;-webkit-box-shadow:0 0 15px #000;padding:0
+!important}div.DevicesIllustration{height:360px;background:url('http://s0-www.ltvimg.com/v3_5_5/images/jw-player/jwplayer_overview_sprites.jpg') no-repeat 0 -600px}div.BrowsersIllustration{height:260px;background:url('http://s0-www.ltvimg.com/v3_5_5/images/jw-player/jwplayer_overview_sprites.jpg') no-repeat -300px -590px}#text p.AddOnCategories,
+div.JWContainer
+p.AddOnCategories{font-size:12px !important;border-bottom:1px solid #369;margin:1em
+0 3em 0 !important;color:#333}div.JWContainer p.AddOnCategories
+a{text-decoration:none}div.JWContainer p.AddOnCategories a:hover{text-decoration:underline}div.JWAddOns{position:relative;padding-left:65px;width:300px;width:235px}div.JWAddOns
+a.Icon{display:block;position:absolute;top:0px;left:0px;background-image:url('http://s0-www.ltvimg.com/v3_5_5/images/jw-player/jwplayer_addons_sprites.png');background-repeat:no-repeat;text-indent: -9999px;outline:none;height:50px;width:50px}div.JWAddOns
+a.IconOVA{background-position:0 0}div.JWAddOns
+a.IconAdtonomy{background-position: -50px 0}div.JWAddOns
+a.IconInStream{background-position: -100px 0}div.JWAddOns
+a.IconViral{background-position:0 -50px}div.JWAddOns
+a.IconFacebookIt{background-position: -50px -50px}div.JWAddOns
+a.IconTweetIt{background-position: -100px -50px}div.JWAddOns
+a.IconCaptions{background-position:0 -100px}div.JWAddOns
+a.IconAudioDesc{background-position: -50px -100px}div.JWAddOns
+a.IconFlow{background-position:0 -150px}div.JWAddOns
+a.IconGrid{background-position: -50px -150px}div.JWAddOns
+a.IconRevolt{background-position: -100px -150px}div.JWAddOns
+a.IconGAPro{background-position:0 -200px}div.JWAddOns
+a.IconTubeMogul{background-position: -50px -200px}div.JWAddOns
+a.IconVidRate{background-position: -100px -200px}div.JWAddOns
+a.IconModieus{background-position:0 -250px}div.JWAddOns
+a.IconStormtrooper{background-position: -50px -250px}div.JWAddOns
+a.IconPlaycasso{background-position: -100px -250px}div.JWAddOns
+a.IconWordpress{background-position:0 -300px}div.JWAddOns
+a.IconDrupal{background-position: -50px -300px}div.JWAddOns
+a.IconJoomla{background-position: -100px -300px}div.JWAddOns
+span.AddOnName{font-size:18px;color:#369;margin:0
+0 4px 0;display:block}div.JWAddOns span.AddOnName
+a{color:#369;text-decoration:none}div.JWAddOns span.AddOnName a:hover{text-decoration:underline;color:#369}div.JWAddOns
+p{font-size:12px !important}div.JWContainer
+p.SeeAllAddOns{font-size:12px !important;clear:both;text-align:right}div.GalleryWrapRight{margin-left:20px}div.GalleryVideoFooter{width:600px;height:10px;padding-bottom:10px;background:url('http://s1-www.ltvimg.com/v3_5_5/images/jw-player/jwplayer_sprites.png') no-repeat 0 -160px}div.JWDownloadClassic{width:700px;height:320px;width:660px;height:280px;border:1px
+solid #bdbdbd;padding:19px;background:url('http://s0-www.ltvimg.com/v3_5_5/images/jw-player/jwclassic_sprites.png') no-repeat 0 0;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;text-shadow:0 1px 0 #fff;position:relative}div.JWDownloadClassic .JWLicense,
+div.JWProClassic
+.JWLicense{font-family:Calibri,Arial,Helvetica,sans-serif;font-size:16px;margin:0;font-style:italic;margin:0
+0 4px 0}div.JWProClassic{width:220px;width:199px;border:1px
+solid #333;padding:19px
+0 0 19px;height:298px;background:url('http://s0-www.ltvimg.com/v3_5_5/images/jw-player/jwclassic_sprites.png') no-repeat 0 -450px;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px;position:relative;text-shadow:0 1px 0 #333;color:#eee}div.JWDownloadClassic
+.JWLicense{color:#690}div.JWProClassic
+.JWLicense{color:#fc0}div.JWDownloadClassic
+h2{margin:0
+0 4px 0;padding:0}div.JWDownloadClassic
+h3{margin:0
+0 10px 0;font-size:12px;line-height:1.5em;color:#369;font-style:italic}div.JWDownloadClassic
+div.JWDLMain{width:268px}#text div.JWDownloadClassic p,
+div.JWDownloadClassic
+p{margin:0
+!important}div.JWDownloadClassic
+input.textinput{border:1px
+solid #000;font-size:12px;width:258px;padding:4px;box-shadow:0 1px 0px #2a6eb2;background:#fff;background: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#ffffff));background: -moz-linear-gradient(top,  #eeeeee,  #ffffff)}#text div.JWDownloadClassic p.JWAgree,
+div.JWDownloadClassic
+p.JWAgree{font-size:10px !important;text-align:center;font-style:italic;color:#333}div.JWDownloadClassic
+a.JWDownloadButton{display:block;height:56px;width:268px;background-image:url('http://s0-www.ltvimg.com/v3_5_5/images/jw-player/jwclassic_sprites.png');background-position: -400px -450px;outline:none;text-indent: -9999px;margin:5px
+0 5px;cursor:pointer}div.JWDownloadClassic a.JWDownloadButton:hover{background-position: -668px -450px}div.JWDownloadClassic
+div.JWVideo{width:300px;height:240px;background:#369;position:absolute;top:39px;right:39px}div.JWProClassic
+h2{margin:0
+0 10px 0}div.JWProClassic
+h5{color:#6cf;text-transform:uppercase;font-weight:bold;font-size:14px;font-style:normal;margin:20px
+0 0 0}div.JWProClassic
+ul{margin:4px
+4px 0 15px !important;font-size:12px;line-height:1.25em}div.JWProClassic
+p.LicenseStart{font-family:Calibri,Arial,Helvetica,sans-serif;font-size:14px;font-weight:bold;font-style:italic;text-align:center;color:#fff}div.JWProClassic
+a.OrderNow{display:block;height:34px;width:172px;margin:15px
+0 0 4px;text-indent: -9999px;font-size:1px;line-height:1px;outline:none;background-repeat:no-repeat;background-position:left;background-image:url('http://s0-www.ltvimg.com/v3_5_5/images/jw/jwpro_btn_ordernow.png') !important}div.JWProClassic a.OrderNow:hover{background-position:right}p.ProductLead{font-size:16px !important;line-height:1.5em !important}#downloadfrm{height:auto !important}#downloadfrm
+p{margin:0
+!important}#downloadfrm
+p.LicenseAgreement{font-size:10px !important;margin:5px
+0 0 0 !important}div.scrollable{margin:0
+!important;height:350px;position:relative;overflow:hidden;padding:19px
+19px 40px 19px;border:1px
+solid #ccc;width:900px !important;border-radius:10px;-moz-border-radius:10px;-webkit-border-radius:10px}div.items{position:absolute;width:2000em}div.items
+div{width:940px;height:350px;float:left;position:relative}div.navContainer{height:61px;position:relative;top: -40px}ul.navi{list-style:none;height:63px;display:block !important;margin:0
+auto !important}ul.navi
+li{display:inline-block;float:left;height:63px;width:90px;margin:0}ul.navi li
+a{display:block;height:63px;width:90px;line-height:60px;text-indent: -9999px;background-repeat:no-repeat;background-image:url('http://s0-www.ltvimg.com/v3_5_5/images/jw-player/jwplayer_features_sprites.jpg');margin:0;outline:none;cursor:pointer}a.browse{height:43px !important;width:40px !important;display:block !important;background-image:url('http://s0-www.ltvimg.com/v3_5_5/images/jw-player/jwplayer_features_sprites.jpg') !important;background-repeat:no-repeat !important;text-indent: -9999px;outline:none;cursor:pointer;position:absolute;top:16px}a.prev{width:18px !important;height:43px;!important;background-image:url('http://s1-www.ltvimg.com/v3_5_5/images/jw/jwplayer_features_sprites.jpg') !important;background-position:0 -640px;top: -200px;left: -40px !important}a.prev:hover{background-position: -30px -640px}a.next{width:18px !important;height:43px;!important;background-image:url('http://s1-www.ltvimg.com/v3_5_5/images/jw/jwplayer_features_sprites.jpg') !important;background-position: -90px -640px;top: -200px;right: -40px !important}a.next:hover{background-position: -120px -640px}div.items div
+div.ItemContent{width:480px;margin-left:40px;*margin-left:15px;z-index:50}div.items div div.ItemContent
+h1{font-size:40px !important;margin:24px
+0 18px}div.items div div.ItemContent
+h2{margin:30px
+0 18px;font-size:36px !important}div.items div div.ItemContent
+h3{margin:0
+0 10px 0;font-size:24px !important;line-height:1.25em;font-weight:normal}#text div.items div div.ItemContent p,
+div.items div div.ItemContent
+p{font-size:16px !important;line-height:1.5em !important;margin:0
+0 1em 0 !important}div.ItemContent ul
+li{line-height:1.25em !important}div.items div
+div.Illustration{width:360px;height:350px;background:#eee;line-height:350px;text-align:center;float:none;top:0px;right:20px;position:absolute}

@@ -1,0 +1,82 @@
+﻿
+.boxContent {
+    padding:10px;
+}
+.blLeft {
+    float: left;
+    width: 26%;
+    background:#eeeeee;
+}
+
+.blRight {
+    float: right;
+    width: 74%;
+}
+.blTitle {
+    background:#6376A2;
+    font-size:20px;
+    color:#fff;
+    border-radius:5px;
+    margin:30px 20px 0px 20px;
+    text-align:center;
+    line-height:50px;
+    
+}
+.blNr {
+    margin:20px 20px 50px 20px;
+    background:#fff;
+    font-size:16px;
+    color:#444;
+    border-radius:5px;
+    line-height:35px;
+    padding:30px 15px;
+    
+}
+    .blNr input {
+        width:25px;
+        line-height:21px;
+        margin:0px 2px;
+        vertical-align:text-top;
+        font-size:12px;
+        text-align:center;
+        cursor:pointer;
+    }
+
+    .levelEdit {
+    background: url(/Content/Images/Button/ico-queding.png) no-repeat center center;
+    width:24px;
+    height:24px;
+}
+.levelCancel {
+    background: url(/Content/Images/Button/ico-quxiao.png) no-repeat center center;
+    width:24px;
+    height:24px;
+}
+.validatebox {
+        border: 1px solid #ccc;
+        background: #fff;
+        width: 174px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 5px;
+        padding: 0px 3px;
+    }
+
+    .tableList select {
+        width: 174px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 5px;
+        padding: 0px 3px;
+        border: 1px solid #ccc;
+        background: #fff;
+    }
+.LevelTb,.LevelTitle {
+    padding-left:10px;
+}
+.BiliAdd {
+    text-align:right;
+    height:45px;
+    line-height:45px;
+    
+}

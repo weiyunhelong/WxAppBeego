@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>登录 - 后台管理系统</title>
+    <link href="/static/css/loginIndex.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <form class="form">
+                <div class="title">
+                    <span class="tWelcome">欢迎使用</span> 
+                    <span class="tSystem">&nbsp;&nbsp;后台管理系统</span> 
+                </div>
+                <div class="userInfo userAccount">
+                    <input id="txt_account"  type="text" placeholder="请输入用户名" />
+                </div>
+                <div class="userInfo userPassword">
+                    <input id="txt_password"  type="password" placeholder="请输入密码" />
+                </div>
+                <div class="login_tips"></div>
+                <div class="userLogin">
+                    <button id="login_button" type="button"><span>登 录</span></button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="/static/js/jquery/jquery-2.1.1.min.js"></script>
+    <script src="/static/js/md5/jquery.md5.js"></script>
+    <script type="text/javascript">
+
+        //匿名函数
+        (function ($)
+        {
+            $.login = {
+                //初始化
+                init: function ()
+                {
+                    //登录
+                    $("#login_button").click(function ()
+                    {
+                        $.login.loginClick();
+                    });
+                    //Enter
+                    document.onkeydown = function (e)
+                    {
+                        if (!e) e = window.event;
+                        if ((e.keyCode || e.which) == 13)
+                        {
+                            document.getElementById("login_button").focus();
+                            setTimeout(function ()
+                            {
+                                document.getElementById("login_button").click();
+                            }, 100);
+                        }
+                    };
+                },
+                //点击登录
+                loginClick: function ()
+                {
+                    var $username = $("#txt_account");
+                    var $password = $("#txt_password");
+                    if ($username.val() == "")
+                    {
+                        $username.focus();
+                        $.login.showMessage('请输入用户名。');
+                        return false;
+                    }
+                    else if ($password.val() == "")
+                    {
+                        $password.focus();
+                        $.login.showMessage('请输入密码。');
+                        return false;
+                    }
+                    else
+                    {
+                        var psd = $.md5($.trim($password.val()));
+                        $("#login_button").attr('disabled', 'disabled').find('span').html("loading...");
+                        var userName = encodeURI($.trim($username.val()));
+                        var pwd = $.md5($.trim($password.val()));
+                        $.ajax({
+                            url: "/Admin/Login",
+                            data: { UserName: userName, Pwd: pwd },
+                            type: "post",
+                            dataType: "json",
+                            success: function (data)
+                            {
+                                if (data.state == "success")
+                                {
+                                    $("#login_button").find('span').html("登录成功，正在跳转...");
+                                    window.setTimeout(function ()
+                                    {
+                                        window.location.href = "/Main/Index";
+                                    }, 500);
+                                } else
+                                {
+                                    $("#login_button").removeAttr('disabled').find('span').html("登录");
+                                    switch (data.data)
+                                    {
+                                        case "0":
+                                            $.login.showMessage("用户名或密码错误");
+                                            break;
+                                    }
+                                }
+                            }
+                        });
+                    }
+                },
+                //显示提示消息
+                showMessage: function (msg)
+                {
+                    $('.login_tips').html('<i class="fa fa-question-circle"></i>' + msg + '');
+                }
+            };
+
+            //加载完调用
+            $(function ()
+            {
+                $.login.init();
+            });
+        })(jQuery);
+    </script>
+</body>
+</html>

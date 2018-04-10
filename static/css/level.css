@@ -1,0 +1,116 @@
+﻿
+.cotLeft {
+    float: left;
+    width: 38%;
+}
+
+.cotRight {
+    float: right;
+    width: 61%;
+}
+
+.LevelNr {
+    border: 2px solid #e5e5e5;
+    color: #4c597f;
+    font-size: 14px;
+    margin-bottom:10px;
+    background:#fff;
+}
+
+.LevelTitle {
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 45px;
+    height: 45px;
+}
+
+.LevelTitle span {
+    float: left;
+    background: url(/Content/Images/Button/ship.png) no-repeat left bottom;
+    height: 47px;
+    padding-left: 10px;
+    width: 88px;
+    font-size: 16px;
+}
+
+.LevelTt {
+    margin-top: 10px;
+    line-height: 40px;
+    padding-left:20px;
+}
+.LevelTxt span {
+    color:#333;
+    padding:0px 0px 0px 20px;
+    width:45%;
+    float:left;
+    display:block;
+}
+.LevelTxt input {
+    border: 1px solid #ccc;
+    width: 94px;
+    height: 30px;
+    line-height:30px;
+    padding:0px 3px;
+    border-radius:5px;
+}
+.LevelSub {
+    text-align:center;
+    padding:28px 0px 29px 0px;
+}
+.LevelSub input {
+    background: url(/Content/Images/UploadButton/bt-bcc.png) no-repeat center center;
+    width:100px;
+    height:35px;
+}
+.LevelSub input:hover {
+    background: url(/Content/Images/UploadButton/bt-bcc-1.png) no-repeat center center;
+}
+.lvTxt {
+    margin-top: 30px;
+    color:#333;
+    text-align:center;
+}
+.lvTxt input {
+    border: 1px solid #ccc;
+    width: 134px;
+    height: 30px;
+    line-height:30px;
+    padding:0px 3px;
+    border-radius:5px;
+    margin-left:10px;
+}
+.LevelTb {
+    padding:20px;
+}
+.LevelAdd {
+    float:right;
+    padding:10px 20px 0px 0px;
+}
+.levelEdit {
+    background: url(/Content/Images/Button/ico-queding.png) no-repeat center center;
+    width:24px;
+    height:24px;
+}
+.levelCancel {
+    background: url(/Content/Images/Button/ico-quxiao.png) no-repeat center center;
+    width:24px;
+    height:24px;
+}
+.validatebox {
+        border: 1px solid #ccc;
+        background: #fff;
+        width: 174px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 5px;
+        padding: 0px 3px;
+    }
+
+    .tableList select {
+        width: 174px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 5px;
+        padding: 0px 3px;
+        border: 1px solid #ccc;
+        background: #fff;
+    }

@@ -1,0 +1,49 @@
+﻿  body { font: 14px; font-family: 'Microsoft YaHei';height: 100%;}
+.divErrorInfo { color: red; text-align: center;font-size: 12px; display: none;}  /*错误提示*/
+/*外部表*/
+.userImg tr td.td-img { width: 35%;}
+.userImg tr td.td-img > div { padding-left: 40px; }
+.userImg tr td.td-img > div  img { width: 100px;min-height:80px;}
+/*内部表*/
+.tb-user { width: 100%;table-layout: fixed;margin-top: 5px;}
+.tb-user tr { height: 50px;}
+.tb-user tr th { width: 80px; text-align: right; font-size: 14px; color: #333; font-family: 'Microsoft YaHei';font-weight: normal; }
+.tb-user tr td { color: #333333;  font-size: 14px; font-family: 'Microsoft YaHei'; }
+.tb-user tr td input 
+{
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #ccc;
+    width: 300px;
+    outline: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    font: 14px;
+    font-family: 'Microsoft YaHei';
+    padding-left: 3px;
+}
+.tb-user tr td input:hover { border: 1px solid #205aa4; }
+.tb-user tr td textarea 
+{
+    margin-bottom: 10px;
+    width: 300px;
+    height: 60px;
+    color: #333333;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    resize: none;
+    outline: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    font: 12px;
+    font-family: 'Microsoft YaHei';
+ }
+.tb-user tr td textarea:hover { border: 1px solid #205aa4;}
+.tb-user tr td span { color: #ff0000;}
+.tb-user tr td p { color: #FF7700; font-size: 14px; margin: 5px 0px 0px 0px;}
+/*导入图片*/
+#PhotoUpload object { left: 0;background: url('/static/images/UploadButton/bt-shc2.png') no-repeat left;}
+#PhotoUpload object:hover {background: url('/static/images/UploadButton/bt-shc2.png') no-repeat left;}
+.valignT { vertical-align:top;}

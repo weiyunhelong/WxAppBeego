@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html style="height: 100%; overflow: hidden;">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>个人信息</title>
+    <link href="/static/js/uploadify/uploadify.css" rel="stylesheet" />
+    <link href="/static/css/adminUserInfo.css" rel="stylesheet" />
+
+</head>
+<body >
+     <input type="hidden" id="userId" value="{{.ID}}" />
+        <div id="dialogUserEdit">
+            <div id="divErrorInfo" class="divErrorInfo"></div>
+            <table class="userImg">
+                <tr>
+                    <td class="td-img">
+                        <div>
+                            <div id="eqImgDiv">
+                                <img id="IntImg" src="/static/images/Other/head.png" />
+                                <input type="button" id="PhotoUpload" />
+                            </div>
+                            <input type="hidden" id="UserImgUrl" value="{{.Photo}}" />
+
+                        </div>
+                    </td>
+                    <td>
+                        <table class="tb-user">
+                            <tr>
+                                <th >用户名：</th>
+                                <td>
+                                    <input type="text" name="NameCreate" disabled="disabled" value="{{.UserName}}"  id="NameCreate" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th >姓名：</th>
+                                <td>
+                                    <input type="text" name="NickName" value="{{.NickName}}"  onblur="NickNameBlur();" id="NickNameCreate" />
+                                    <span id="NickNameMessgae" ></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th class="valignT" >新密码：</th>
+                                <td>
+                                    <input type="password" name="NewPassword" id="NewPwdCreate" />
+                                    <p>提示：不填写即为保持原密码。</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th >确认密码：</th>
+                                <td>
+                                    <input type="password" name="Password" id="PwdCreate" />
+                                    <span id="PwdMessgae" ></span>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    <script src="/static/js/Jquery/jquery-2.1.1.min.js"></script>
+    <script src="/static/js/Public/common.js"></script>
+    <script src="/static/js/uploadify/jquery.uploadify.min.js"></script>
+    <script src="/static/js/dialog/dialog.js"></script>
+    <script type="text/javascript">
+        $(function ()
+        {
+
+            if ($("#UserImgUrl").val() != "")
+            {
+                $("#IntImg").attr("src", "" + $("#UserImgUrl").val() + "");
+            }
+
+            initUploadify();
+        })
+
+        //姓名失去焦点验证
+        function NickNameBlur()
+        {
+            var nickName = $("#NickNameCreate").val();
+            nickName = nickName.trim();
+            if (nickName.length == 0)
+            {
+                $("#divErrorInfo").text("姓名不能为空").show();
+                $("#NickNameCreate").focus();
+                return false;
+            }
+            if (nickName.length < 1 || nickName.length > 16)
+            {
+                $("#divErrorInfo").text("姓名必须要在1-16个字符之间").show();
+                $("#NickNameCreate").focus();
+                return false;
+            }
+            $("#divErrorInfo").text("").hide();
+            return true;
+        }
+
+        //密码验证
+        function CheckPwd()
+        {
+            var NewPwdCreate = $("#NewPwdCreate");
+            var newPwd = NewPwdCreate.val().trim();
+            if (newPwd.length > 0)
+            {
+                if (newPwd.length < 6 || newPwd.length > 16)
+                {
+                    $("#divErrorInfo").text("密码长度必须要在6-16个字符之间").show();
+                    return false;
+                }
+            }
+            $("#divErrorInfo").text("").hide();
+            return true;
+        }
+
+        //保存信息
+        function UpdateUser()
+        {
+            var NickNameCreate = $("#NickNameCreate");
+            var NewPwdCreate = $("#NewPwdCreate");
+            var PwdCreate = $("#PwdCreate");
+            var userId = $("#userId");
+            //var RoleCreate = $("#RoleCreate");
+            var UserImgUrl = $("#UserImgUrl");
+
+            if (UserImgUrl.val() == "")
+            {
+                UserImgUrl.val("/static/images/Template/photo2.png");
+            }
+
+            if (NickNameBlur() && CheckPwd())
+            {
+                if (NewPwdCreate.val() == PwdCreate.val())
+                {
+                    $("#PwdMessgae").html("");
+
+                    $.ajax({
+                        url: "/Admin/UpdateUser",
+                        type: "post",    //数据发送方式  
+                        async: false,
+                        dataType: "json",
+                        data: { 
+                            NickName: NickNameCreate.val(),
+                            Pwd:NewPwdCreate.val(),
+                            Id:userId.val(),
+                            Photo:UserImgUrl.val()
+                         },
+                        success: function (data)
+                        {
+                            console.log("更新的结果:");
+                            console.log("更新的结果:");
+                            if (data.data == "1")
+                            {
+                                window.parent.setUserPhoto(UserImgUrl.val());
+                                window.parent.layer.msg("修改成功");
+                                window.parent.$("#spanNickName").text(NickNameCreate.val());
+                                window.parent.layer.closeAll('iframe');
+                            } else if (data.data == "0")
+                            {
+                                window.parent.layer.msg("修改失败");
+                            }
+                        },
+                        error: function ()
+                        {
+                            window.parent.layer.msg("服务器错误");
+                        }
+                    })
+                }
+                else
+                {
+                    $("#divErrorInfo").text("密码输入不一致").show();
+                }
+            }
+        }
+        var auth = "@(Request.Cookies[FormsAuthentication.FormsCookieName] == null ? string.Empty : Request.Cookies[FormsAuthentication.FormsCookieName].Value)";
+        var ASPSESSID = "@Session.SessionID";
+        function initUploadify()
+        {
+            $('#PhotoUpload').uploadify({
+                'formData': { 'ASPSESSID': ASPSESSID, 'AUTHID': auth },
+                'fileObjName':'image',//html input标签的name属性的值吧。   
+                'swf': '/static/js/uploadify/uploadify.swf',
+                'uploader': "/Admin/FilesUpLoad",
+                'multi': false,
+                'uploadLimit': 1,
+                'queueSizeLimit': 1,
+                'width': 102,
+                'height': 32,
+                'fileSizeLimit': '3MB',
+                'buttonText': '',
+                'buttonCursor': 'hand',
+                'fileTypeDesc': '图片资源',
+                'fileTypeExts': '*.jpg;*.png;*.jpeg',
+                'method': 'Post', //如果要传参数，就必须改为GET   
+                'onSelectError': uploadify_onSelectError,
+                'onUploadError': uploadify_onUploadError,
+                'onUploadSuccess': function (file, data, response)
+                {
+                    console.log("返回的结果:");
+                    console.log(data);
+                    var result=JSON.parse(data);
+                    $("#UserImgUrl").val(result.data);
+                    $("#IntImg").attr("src", "" + result.data + "");
+                }
+
+            });
+        }
+
+    </script>
+</body>
+</html>
+
+

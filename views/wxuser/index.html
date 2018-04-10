@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+ 
+<html>
+      <head>
+        <title>首页 - 微信用户列表页面</title>
+        <link rel="stylesheet" href="/static/js/easyui/themes/default/easyui.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="/static/js/easyui/themes/icon.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="/static/js/easyui/themes/default/datagrid.css" rel="stylesheet"/>
+        <script type="text/javascript" src="/static/js/jquery/jquery-2.1.1.min.js"></script> 
+        <script src="/static/js/easyui/jquery.easyui.min.js"></script>
+        <script src="/static/js/easyui/locale/easyui-lang-zh_CN.js"></script>
+      </head>       
+    <body>
+        <!--搜索部分-->
+        <div class="row pull-right" style="margin-bottom: 20px;margin-right: 5px;text-align:right;margin-right: 40px;">
+            <input type="text" placeholder="请输入名称" id="txt_search"/>
+            <button class="" id="btn_search">搜索</button>
+        </div>
+      
+        <!--数据内容部分-->
+        <div class="cotMiddle" style="width:100%;height:450px;">
+           <table class="tableList" id="datagrid" data-form="easyui" data-options="fit:true" cellspacing="0" cellpadding="0" border="0"></table>
+        </div>
+
+        <!--JS部分-->
+       <script type="text/javascript">
+         //列定义
+         var cols = [[
+                    { field: "ID", title: 'ID', width: 10, hidden: true },
+                    { field: "ck", title: '', width: 20, checkbox: true },
+                    { field: "OpenID", title: 'OpenID', sortable: false, width: 100, align: 'center' },                   
+                    { field: "WxName", title: '微信昵称', sortable: false, width: 150, align: 'center' },
+                    { field: "WxSex", title: '性别', sortable: false, width: 80, align: 'center',formatter: function (value, rec) {
+                            var op = [];
+                        
+                            if (value== 1) {
+                                op.push("男");
+                            }else if (value== 2) {
+                                op.push("女");
+                            } else{
+                                op.push("未知");
+                            }                    
+                            return op.join("");
+                        }
+                    },
+                    { field: "WxTouxiang", title: '微信头像', sortable: false, width: 100, align: 'center', formatter: function (value, rec) {
+                            var op = [];
+                            op.push("<image  style='width:80px;height:80px;margin:10px;' src='"+value+"'/>");
+                            return op.join("");
+                      }
+                    }, 
+                    { field: "Create", title: '创建时间', sortable: false, width: 200, align: 'center' },
+               ]];
+
+    //页面的初始化
+    $(function () {
+        //搜索按钮的点击事件
+        $("#btn_search").click(function (evt) {
+            evt.preventDefault();
+            var params = $("#datagrid").datagrid('options').queryParams;
+            params.search = $("#txt_search").val();
+            $("#datagrid").datagrid("load");
+        });
+        //输入框的回车事件
+        $("#txt_search").keydown(function (event) {
+            if (event.keyCode == 13) {
+                event.preventDefault();
+                $("#btn_search").click();
+                return false;
+            }
+        });
+        //加载Easyui数据
+        LoadDatagrid();
+    });
+    //加载列表数据
+    function LoadDatagrid() {
+        var $dg = $("#datagrid");
+        $dg.datagrid({
+            title: '数据列表',
+            url: '/WxUserManage/PageData',
+            fit: true,
+            fitColumns: true,
+            striped: true,
+            nowrap: true,
+            idField: 'ID',
+            pagination: true,
+            pageNumber: 1,
+            pageSize: 20,
+            pageList: [10, 20, 30, 45, 60, 75],
+            rownumbers: true,
+            singleSelect: false,
+            loadMsg: "数据加载中...",
+            queryParams: {
+                saerch: $("#txt_search").val()
+            },
+            sortName: 'ID',
+            sortOrder: 'desc',
+            columns: cols,
+            onLoadSuccess: function () {
+                //多选时，加载完成后清除所有选中项（不然可能会有残留选中项）
+                $dg.datagrid("clearSelections");
+            },
+            onDblClickRow: function (rowIndex, row) {
+                
+            },
+            onSortColumn: function (sort, order) {
+                $(".datagrid-view2 .datagrid-header .datagrid-cell .icon.iconfont:hidden").show();
+                $(".datagrid-view2 .datagrid-header .datagrid-cell-c1-" + sort + " .icon.iconfont").hide();
+            },
+            loadFilter: function (data) {
+                for (var i = 0; i < data.rows.length; i++) {
+                    for (var att in data.rows[i]) {
+                        if (typeof (data.rows[i][att]) == "string") {
+                            data.rows[i][att] = data.rows[i][att].replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                        }
+                    }
+                }
+                return data;
+            }
+        });
+    }
+</script>
+</body>
+</html>
